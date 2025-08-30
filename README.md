@@ -6,7 +6,7 @@ Este projeto é parte do meu aprendizado em desenvolvimento web e demonstra lóg
 
 ## 🖼️ Capturas de Tela
 
-<img width="1310" height="792" alt="image" src="https://github.com/user-attachments/assets/aa614a69-d04a-4d58-b1f3-e3fea422be22" />
+<img width="895" height="713" alt="image" src="https://github.com/user-attachments/assets/788c6a3b-57db-4075-a636-3827efd27407" />
 
 ---
 
