@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  background: lightsteelblue;
+  color: #333;
+}
+h1 {
+  font-size: 2.6rem;
+}
+
+header {
+  background: rgb(222, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgb(111, 136, 247) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Button */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2.2rem 0;
+}
+nav button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(222, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgb(12, 109, 255) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+/* @keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* jogo */
+main {
+  display: flex;
+  width: 18rem;
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height: 6rem;
+  border: 0.3rem solid;
+  box-sizing: border-box;
+  flex: 1 1 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#block-1,
+#block-2,
+#block-3 {
+  border-top: none;
+}
+#block-1,
+#block-4,
+#block-7 {
+  border-left: none;
+}
+#block-3,
+#block-6,
+#block-9 {
+  border-right: none;
+}
+#block-7,
+#block-8,
+#block-9 {
+  border-bottom: none;
+}
+
+/* Símbolos */
+.score-box {
+  margin: 0 20px;
+}
+.x {
+  font-size: 4rem;
+  color: rgb(191, 70, 255, 1);
+  line-height: 6rem;
+  display: inline-block;
+}
+.o {
+  width: 3rem;
+  height: 3rem;
+  border: 0.3rem solid rgb(12, 109, 255);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*Hide*/
+.hide {
+  display: none;
+}
+
+/* Placar */
+#scoreboard-container {
+  font-weight: bold;
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#x-scoreboard {
+  color: rgb(191, 70, 255);
+  margin-right: 0.2rem;
+}
+
+#o-scoreboard {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 0.15rem solid rgb(12, 109, 255);
+  border-radius: 50%;
+}
+
+/*Vitoria*/
+#message p {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 33rem;
+  width: 32rem;
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgb(111, 136, 247) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: none;
+}

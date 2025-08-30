@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo da Velha</h1>
+    </header>
+    <nav>
+      <div>
+        <button id="btn-2players">
+          2 jogadores
+          <div class="hoverEffect">
+            <div></div>
+          </div>
+        </button>
+
+        <button id="btn-ai">
+          Contra CPU
+          <div class="hoverEffect">
+            <div></div>
+          </div>
+        </button>
+      </div>
+      <button id="backToMenu" class="hide">
+        Voltar ao Menu
+        <div class="hoverEffect">
+          <div></div>
+        </div>
+      </button>
+    </nav>
+    <main class="hide" id="game">
+      <div class="box" id="block-1"></div>
+      <div class="box" id="block-2"></div>
+      <div class="box" id="block-3"></div>
+      <div class="box" id="block-4"></div>
+      <div class="box" id="block-5"></div>
+      <div class="box" id="block-6"></div>
+      <div class="box" id="block-7"></div>
+      <div class="box" id="block-8"></div>
+      <div class="box" id="block-9"></div>
+
+      <div id="scoreboard-container">
+        <h2>Placar</h2>
+        <span class="score-box">
+          <span id="x-scoreboard">X</span>:
+          <span id="scoreboard-1">0</span>
+        </span>
+        <span class="score-box">
+          <span id="o-scoreboard"></span>:
+          <span id="scoreboard-2">0</span>
+        </span>
+      </div>
+    </main>
+
+    <div class="hide">
+      <div class="x">X</div>
+      <div class="o"></div>
+    </div>
+
+    <div id="message">
+      <p></p>
+    </div>
+  </body>
+</html>
